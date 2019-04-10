@@ -6,7 +6,7 @@
       "value": "deployadmin"
     },
     "adminPasswordOrKey": {
-      "value": "will add ssh key"
+      "value": "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAiiht2bCA9EB+1pwbIdG6We6KwRJqqPIL+Zlw9MZknhFN/LETvx3rr3TnUpPwxtD+NGrfxVLPMdAzejFSqWBVriMjRyCR1jJyttVULXc2tv9Y2YxDHS5KLJbfVU2WGEo2nAz6dGfLd8EVtAa1PBA6eiJ1ASXTC7DPOSZMZak/6ppf+plRdk0GR9TYO5B1hHtN0mn1HuLD4F4LNW3l/ZR42hEgnkBzCOjwn79SCj1s8Wb3Dm5JZ9yc5clw9PZpHUS1WBrc4SitAykVst1TOuIP3MQlV8g5UBEGeqHXfwlb4bqOVnGcFhPDC8KmyBrH+aIpFCA5jdxHLFhM9mxOnAW3UQ== rsa-key-20190411"
     },
     "dnsLabelPrefix": {
       "value": "linuxdnsprefix"
