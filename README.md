@@ -1,7 +1,6 @@
-#                        / .'
-#                  ,---, \/
-# Inspired by a   (,_,' \()
-#                  ^"""^"
+
+# Inspired by a <img src="https://github.com/marlonsingleton/simple-Azure-linuxVM-bug-free/blob/master/bug.jpg"/>
+
 
 
 ARM Template Bug corrected here on line 169 of the azuredeploy.json file.
