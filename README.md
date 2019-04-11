@@ -1,6 +1,7 @@
 
 # Inspired by a <img src="https://github.com/marlonsingleton/simple-Azure-linuxVM-bug-free/blob/master/bug.jpg"/>
 
+<img src="https://github.com/marlonsingleton/simple-Azure-linuxVM-bug-free/blob/master/portalbug.jpg"/>
 
 # simple-Azure-linuxVM-bug-free
 
