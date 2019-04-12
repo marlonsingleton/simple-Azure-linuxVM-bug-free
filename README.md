@@ -23,9 +23,8 @@ When setting the ARM Template default to password authentication, I got the foll
 <img src="https://github.com/marlonsingleton/simple-Azure-linuxVM-bug-free/blob/master/Failed_withPasswordAuthSet.jpg"/>
 
 By now, I definitely felt like something needed to be addressed here.
-I came up with the following.
 
-### The differnce comes down to this simple line
+### One simple line
 ```
 "adminPassword": "[if(equals(parameters('authenticationType'), 'sshPublicKey'), json('null'), base64(parameters('adminPasswordOrKey')))]",
 ```
