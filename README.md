@@ -26,7 +26,9 @@ By now, I definitely felt like something needed to be addressed here.
 I came up with the following.
 
 ### The differnce comes down to this simple line
+```
 "adminPassword": "[if(equals(parameters('authenticationType'), 'sshPublicKey'), json('null'), base64(parameters('adminPasswordOrKey')))]",
+```
 
 - This prevents the authentication types from stepping on each other (This occurred in the Portal in Case 1).
 - It prevents both auth types from being assigned the sshKey (This occurred in Case 2).
