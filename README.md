@@ -2,7 +2,7 @@
 # Inspired by a <img src="https://github.com/marlonsingleton/simple-Azure-linuxVM-bug-free/blob/master/bug.jpg"/> and my journey to a solution.
 
 At this time of this writing, I submitted a PR to fix the issue below. However, my PR was refused. 
-I'm leaving my work here for others to review and come to your own conclusion.
+I'm leaving my work here for others to review and come to thier own conclusion.
 
 ### CASE #1
 When launching the deployment directly in the Azure Portal, you're unable to provide an ssh key.
