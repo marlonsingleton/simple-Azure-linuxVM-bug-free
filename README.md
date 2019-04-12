@@ -1,8 +1,9 @@
 
 # Inspired by a <img src="https://github.com/marlonsingleton/simple-Azure-linuxVM-bug-free/blob/master/bug.jpg"/> and my journey to a solution.
 
-At this time of this writing, I submitted a PR to fix the issue below. However, my PR was refused. <br />
-I'm leaving my work here for others to review and come to thier own conclusion.
+At this time of this writing, I submitted a PR to fix the issue presented below.<br /> 
+Confusingly, my PR was refused. Even more confusing, I went as far to present these cases.<br />
+I'm leaving my work here for others to review and come to thier own conclusions.
 
 ### CASE #1
 When launching the deployment directly in the Azure Portal, you're unable to provide an ssh key.
@@ -13,7 +14,7 @@ Case #1 was reported to a project I've been working on. <br />
 The attached image is me repoducing the error, validating the user's concerns.
 
 ### CASE #2
-Looking behind the scenes, I found both auth types being assigned the sshKey. <br /> Desireable? I don't think it is.
+Looking behind the scenes, I found both auth types being assigned the sshKey. <br /> Desirable? I don't think it is.
 
 <img src="https://github.com/marlonsingleton/simple-Azure-linuxVM-bug-free/blob/master/2authsAssignedsshKey.jpg"/>
 
