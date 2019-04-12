@@ -1,7 +1,16 @@
 
 # Inspired by a <img src="https://github.com/marlonsingleton/simple-Azure-linuxVM-bug-free/blob/master/bug.jpg"/>
 
+
+### CASE #1
+When launching the deployment directly in the Azure Portal, you're unable to provide an ssh key.
+
 <img src="https://github.com/marlonsingleton/simple-Azure-linuxVM-bug-free/blob/master/portalbug.jpg"/>
+
+### CASE #2
+When template is modified to use "password" authentication and deployed from Azure CLI, the deployment fails.
+
+<img src=""/>
 
 # simple-Azure-linuxVM-bug-free
 
