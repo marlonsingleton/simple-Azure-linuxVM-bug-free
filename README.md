@@ -7,12 +7,12 @@ When launching the deployment directly in the Azure Portal, you're unable to pro
 
 <img src="https://github.com/marlonsingleton/simple-Azure-linuxVM-bug-free/blob/master/portalbug.jpg"/>
 
-Case #1 was reported to a project I contribute to. The attached image is me repoducing the error, validating the user's concerns. My PR was closed and deemed an Azure Portal issue. 
+Case #1 was reported to a project I've been working on. The attached image is me repoducing the error, validating the user's concerns.
 
 ### CASE #2
-When template is modified to use "password" authentication and deployed from Azure CLI, the deployment fails.
+Looking behind the scenes, I found both auth types being assigned the sshKey. Desireable? I don't think it is.
 
-<img src=""/>
+<img src="https://github.com/marlonsingleton/simple-Azure-linuxVM-bug-free/blob/master/2authsAssignedsshKey.jpg"/>
 
 # simple-Azure-linuxVM-bug-free
 
