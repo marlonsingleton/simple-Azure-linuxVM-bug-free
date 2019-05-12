@@ -5,27 +5,26 @@ At this time of this writing, I submitted a PR to fix the issue presented below.
 Confusingly, my PRs were rejected, even with the supporting evidence I provided below.<br />
 I'm leaving my work here for others to review and come to thier own conclusions.
 
-### CASE #1
-When launching the deployment directly in the Azure Portal, you're unable to provide an ssh key.
+### The Reported Bug
+When launching the ARM deployment directly in the Azure Portal, you're unable to provide an ssh key.
 
 <img src="https://github.com/marlonsingleton/simple-Azure-linuxVM-bug-free/blob/master/portalbug.jpg"/>
 
-Case #1 was reported to a project I've been working on. <br />
-The attached image is me repoducing the error, validating the user's concerns.
+Okay. I figured I'd take a look into this and possibly learn something along the way.
 
-### CASE #2
-Looking behind the scenes, I found both auth types being assigned the sshKey. <br /> Desirable? I don't think it is.
+### 1st Finding
+Looking behind the scenes, I found both auth types being assigned the sshKey. <br /> Desirable? Of course not!
 
 <img src="https://github.com/marlonsingleton/simple-Azure-linuxVM-bug-free/blob/master/2authsAssignedsshKey.jpg"/>
 
-### CASE #3
+### 2nd Finding
 When setting the ARM Template default to password authentication, I got the following error.
 
 <img src="https://github.com/marlonsingleton/simple-Azure-linuxVM-bug-free/blob/master/Failed_withPasswordAuthSet.jpg"/>
 
-By now, I definitely felt like something needed to be addressed here.
+By now, I'm feeling this can be fixed by using a condition to prevent the simultaneous auth assignments and converting the parameter value to a valid password, if password authentication was selected by the user. Note: View template to see sshPublicKey implementation as it required no change.
 
-### One simple line
+### Here's my fix action
 ```
 "adminPassword": "[if(equals(parameters('authenticationType'), 'sshPublicKey'), json('null'), base64(parameters('adminPasswordOrKey')))]",
 ```
