@@ -2,7 +2,7 @@
 # Inspired by a <img src="https://github.com/marlonsingleton/simple-Azure-linuxVM-bug-free/blob/master/bug.jpg"/> and my journey to a solution.
 
 At this time of this writing, I submitted a PR to fix the issue presented below.<br /> 
-Confusingly, my PR was refused. Even more confusing, I went as far to present these cases.<br />
+Confusingly, my PRs were rejected, even with the supporting evidence I provided below.<br />
 I'm leaving my work here for others to review and come to thier own conclusions.
 
 ### CASE #1
