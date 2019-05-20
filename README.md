@@ -22,7 +22,7 @@ When setting the ARM Template default to password authentication, I got the foll
 
 <img src="https://github.com/marlonsingleton/simple-Azure-linuxVM-bug-free/blob/master/Failed_withPasswordAuthSet.jpg"/>
 
-By now, I'm feeling this can be fixed by using a condition to prevent the simultaneous auth assignments and converting the parameter value to a valid password, if password authentication is selected by the user. 
+By now, I'm feeling this can be fixed by using a condition to prevent the simultaneous auth assignments and converting the parameter value to a valid password when selected. 
 ### Note: 
 View template to see sshPublicKey implementation as it requires no change.
 
